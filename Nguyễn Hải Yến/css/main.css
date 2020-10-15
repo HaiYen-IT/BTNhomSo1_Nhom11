@@ -1,0 +1,341 @@
+/* general */
+*{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin: 0;
+    
+}
+
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width{
+    width: 100%;
+}
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* footer */
+/* #footer-top #header{
+    position: fixed;
+    top:0;
+} */
+/* header */
+#header{
+    height: 60px;
+    background-color:#333;
+    font-size: 30px;
+    line-height: 60px;
+    text-indent: 60px;
+    position: fixed;
+    width: 100%;
+    
+}
+#header a{
+    text-decoration: none;
+    color: white;
+}
+/* menu */
+#menu{
+    height: 50px;
+    background-color: rgb(190, 99, 82);
+    position: fixed;
+    width: 100%;
+    top: 60px;
+    
+}
+#menu ul li:hover,#menu ul a:hover {
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+
+}
+#menu ul{
+    margin: 0px;
+    padding: 0px;
+}
+#menu ul li{
+    list-style: none;
+    float: left;
+}
+#menu ul li a{
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    padding: 0 50px 0 50px;
+    font-size: 16px;
+    border-right: 1px solid whitesmoke;
+
+}
+
+/* banner */
+#banner{  
+    height: auto;
+    width: 100%;
+    margin: 0px auto;
+    /* border-bottom: 1px solid rgb(228, 219, 219); */
+
+}
+#banner img{
+    width: 100%;
+    height: auto;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    padding-top: 110px;
+}
+/* content */
+#content{
+    /* background: wheat;
+    height: auto;  */
+    margin-top: -30px; 
+    /* background-color: #eaeae8; */
+    
+} 
+/* footer */
+#footer{
+    background: black;
+    height: 40px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* home */
+#content #home{
+    border-bottom: 1px solid rgb(228, 219, 219);
+    height: 650px;
+    /* background-color: #eee1b5; */
+}
+#content #home img{
+    border-radius:50%;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    /* margin-left: 350px;
+    margin-top: 100px; */
+    
+        
+}
+#hobbies .area 
+{
+    margin: auto;
+    position:relative;
+    width: 400px; 
+    height: 250px;
+    perspective: 600px;
+}
+
+.area .rotate
+{
+    width: 100%;    
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out 0s;
+    -webkit-transition:preserve-3d;
+    transition: all 0.5s ease-in-out 0s;
+    -o-transition:preserve-3d;
+    transition: all 0.5s ease-in-out 0s;
+    -moz-transition:preserve-3d;
+    transition: all 0.5s ease-in-out 0s;
+
+}
+
+.area .rotate >*
+{
+    position:absolute;
+    backface-visibility: hidden;
+}
+
+.rotate.x *:nth-child(2)
+{ 
+    transform: rotateX(180deg);  
+    -webkit-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg); 
+    -moz-transform: rotateX(180deg); 
+}
+
+/* .area:hover > .rotate.x
+{ 
+    transform: rotateX(180deg);   
+    -webkit-transform: rotateX(180deg); 
+    -o-transform: rotateX(180deg); 
+    -moz-transform: rotateX(180deg); 
+} */
+
+.rotate.y *:nth-child(2)
+{ 
+    transform: rotateY(180deg); 
+    -webkit-transform: rotateY(180deg);  
+    -o-transform: rotateY(180deg); 
+    -moz-transform: rotateY(180deg);
+}
+
+ .area:hover > .rotate.y
+{
+    transform: rotateY(180deg);   
+    -webkit-transform: rotateY(180deg);  
+    -o-transform: rotateY(180deg); 
+    -moz-transform: rotateY(180deg);
+}
+#content #home h1{
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+}
+
+#content #home .home_1 {
+    /* padding: 0px;
+    float: right;
+    margin-right: 300px;
+    margin-top: 0px; */
+    padding-top: 0px;
+    display: flex;
+    font-size: 20px;
+    justify-content: space-evenly;
+
+}
+#content #home .home_1 p{
+    line-height: 2;
+}
+/* hobbies */
+#content #hobbies{
+    height: 600px;
+    margin-top: -26.2px; 
+    border-bottom: 1px solid rgb(228, 219, 219);
+    /* background-color: #e5e1e1; */
+}
+#content #hobbies h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+    padding-top: 50px;
+}
+
+#content #hobbies table{
+    border-color: sienna;
+    border-collapse: collapse;
+    width: 1200px;
+    
+}
+#content #hobbies table tr td img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto ;
+    
+}
+#content #hobbies table tr td p{
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+/* Skills */
+#content #skills{
+    margin: 0 auto 50px auto;
+    padding: 25px 0;
+    height: 550px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgb(228, 219, 219);
+}
+#content #skills h1{
+    text-align: center;
+    font-size: 40px;
+    clear: left;
+    
+    
+} 
+#content #skills .skill-1{
+    align-self: flex-end;
+    width: 70px;
+    color: #fff;
+    text-align: center;
+    height: var(--percent);
+    background-color: chocolate;
+    animation: growth linear 1s;
+}
+
+@keyframes growth{
+    from{
+        opacity: 0;
+        height: calc(var(--percent) - 50%);
+    }
+    to{
+        opacity: 1;
+        height: var(--percent);
+    }
+}
+
+/* Dream */
+#content #dream{
+    border-bottom: 1px solid rgb(228, 219, 219);
+    height: 580px;
+}
+#content #dream h1{
+    text-align: center;
+    font-size: 40px;
+    /* margin-top: 50px; */
+    
+}
+#content #dream .dream-1 p{
+    font-size: 20px;
+}
+#content #dream .dream-1 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+} 
+
+/* Career */
+#content #career{
+    border-bottom: 1px solid rgb(228, 219, 219);
+    height: 600px;
+}
+#content #career h1{
+    text-align: center;
+    font-size: 40px;
+}
+#content #career .career-1 p{
+    margin-left: 30px;
+    font-size: 20px;
+    line-height: 2.5;
+}
+
+/* Contact */
+#content #contact{
+    height: 450px;
+}
+#content #contact h1{
+    margin-top: 100px;
+    text-align: center;
+    font-size: 40px;
+}
+#content #contact p{
+    margin-left: 30px;
+    font-size: 20px;
+    line-height: 2.5;
+}
