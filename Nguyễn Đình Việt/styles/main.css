@@ -1,23 +1,32 @@
 .h2{
-  font-size: 25pt;
+  font-size: 15pt;
   margin-bottom: 30px;
   font-family: 'Quicksand', sans-serif;
 }
 
-h2, .h2 {
-    color:#010101;
-    
-  }
 
   h3, .h2 {
     color:#010101;
+    padding: 0% 15%;
+  }
+
+  .h4{
+    font-size: 60px;
+    padding-left: 15%;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
   }
   
+
+  .aaa{
+    left: 50%;
+  }
+
   .cc-profile-image img {
     position: relative;
     border-radius: 50%;
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     padding: 0;
     margin: 0;
     border: 15px solid transparent;
@@ -59,6 +68,7 @@ h2, .h2 {
      width: 70%;
   }
 
+
   .bar span{
     height: 8px;
     float: left;
@@ -73,11 +83,18 @@ h2, .h2 {
     width: 80%;
   }
 
+  .html{
+    width: 20%;
+  }
+
+  .java{
+    width: 20%;
+  }
+
   nav {
     float: left;
-    width: 60%;
-    height: 300px;
-    height: 0%;
+    width: 75%;
+    height: 1000px
   }
 
   nav ul {
@@ -87,9 +104,11 @@ h2, .h2 {
   
   article {
     float: right;
-    width: 32%;
+    width: 25%;
     background-color: #f1f1f1;
-    height: 0%; 
+    height: 753px;
+    position: fixed;
+    right: 0;
   }
   
   section:after {
@@ -99,17 +118,27 @@ h2, .h2 {
   }
 
   .slider-container{
-    height: 100%;
-    width: 30%;
-    position: absolute;
+    height: 753px;
+    width: auto;
     overflow: hidden; 
-    text-align: center;
+  
   }
   .info-container{
-    height: 100%;
-    width: 70%;
+    height: auto;
+    width: 75%;
     position: absolute;
     overflow: hidden; 
+    
+    
+  }
+
+  .title{
+    background: #010101;
+    color: #f2f2f2;
+    height: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 30px;
     text-align: center;
   }
   
@@ -119,6 +148,8 @@ h2, .h2 {
     z-index: 900;
     width: 100%;
     bottom: 0;
+    padding-left: 135px;
+
   }
   
   .menu label {
@@ -133,13 +164,10 @@ h2, .h2 {
   }
   
   .slide {
-    width: 100%;
-    height: 100%;
+    width: 423px;
+    height: 753px;
     position: absolute;
     top: 0;
-    left: 100%;
-    z-index: 10;
-    padding: 8em 1em 0;
     background-size: cover;
     background-position: 50% 50%;
     transition: left 0s .75s;
@@ -164,5 +192,111 @@ h2, .h2 {
     background-image: url("https://lh3.googleusercontent.com/haDwSWolTBbd_kAjEfTvac3oTbLnSxQfPC68UR6uogivuInepv7HBfgJ7iUuUmg6NCSTs-yXNVKFYsHDR4yyEjl-gmblzDVmGnNv1QxV6pHrV-IOxwKjPpHo_1GHVIYMGgNf48-d_g=w2400");
   }
 
+a {
+  color: #6c6d6d;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  letter-spacing: 0.3em;
+  font-size: 0.6em;
+  font-weight: 400;
+  padding: 0.3rem 1rem;
+  margin: 1.9rem 0 0 0;
+  float: right;
+}
+a:hover {
+  color: white;
+  background: #004ffc;
+  border-bottom: 0.35em solid black;
+}
+strong {
+  font-weight: 600;
+}
+h1 {
+  font-family: 'Saira', sans-serif;
+  letter-spacing: 1.5px;
+  color: white;
+  font-weight: 400;
+  font-size: 2.4em;
+}
+#timeline-content {
+  margin-top: 50px;
+  text-align: center;
+}
+/* Timeline */
+.timeline {
+  border-left: 4px solid #000000;
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+  background: rgba(255, 255, 255, 0.03);
+  color: #333;
+  font-family: 'Chivo', sans-serif;
+  margin: 50px auto;
+  letter-spacing: 0.5px;
+  position: relative;
+  line-height: 1.4em;
+  font-size: 1.03em;
+  padding: 50px;
+  list-style: none;
+  text-align: left;
+  font-weight: 100;
+  max-width: 30%;
+}
+.timeline h1 {
+  font-family: 'Saira', sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 100;
+  font-size: 1.4em;
+}
+.timeline h2,
+.timeline h3 {
+  font-family: 'Saira', sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 400;
+  font-size: 1.4em;
+}
+.timeline .event {
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+  padding-bottom: 25px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.timeline .event:last-of-type {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+.timeline .event:before,
+.timeline .event:after {
+  position: absolute;
+  display: block;
+  top: 0;
+}
+.timeline .event:before {
+  left: -217.5px;
+  color: black;
+  content: attr(data-date);
+  text-align: right;
+  font-weight: 100;
+  font-size: 0.9em;
+  min-width: 120px;
+  font-family: 'Saira', sans-serif;
+}
+.timeline .event:after {
+  box-shadow: 0 0 0 4px #000000;
+  left: -57.85px;
+  background: black;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  content: "";
+  top: 5px;
+}
 
+.iconnav{
+position: absolute;
+  top: 65%;
+  left: 44%;
+  text-align: center;
 
+}
